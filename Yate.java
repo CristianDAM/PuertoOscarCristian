@@ -1,21 +1,45 @@
 
 /**
  * Write a description of class Yate here.
- *
- * @author (your name)
+ * 
+ * @author (Cristian) 
  * @version (a version number or a date)
  */
 public class Yate extends EmbarcacionAMotor
 {
-    // instance variables - replace the example below with your own
-    
+
+    private int numCamarotes;
 
     /**
      * Constructor for objects of class Yate
      */
-    public Yate()
+    public Yate( String matricula, double eslora, int anioFabricacion, Persona propietario, int numeroCamarotes, int potencia )
     {
-        // initialise instance variables
+        super(matricula, eslora, anioFabricacion, propietario, potencia);
+        numCamarotes = numeroCamarotes;
+    }
 
+    @Override
+    /**
+     * Metodo que devuelve el coeficiente de Bernua de un Yate
+     */
+    public int getCoeficienteBernua()
+    {
+
+        return (numCamarotes + super.getCoeficienteBernua());
+    }
+    
+    @Override
+    /**
+     * Metodo toString
+     */
+    public String toString()
+    {
+        String datosBarco = "";
+        datosBarco += super.toString();
+        datosBarco += "Tiene" + " " + numCamarotes + " " + "camarotes" + "\n";
+        
+        return datosBarco;
+        
     }
 }

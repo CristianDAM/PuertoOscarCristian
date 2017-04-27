@@ -1,21 +1,49 @@
 
 /**
  * Write a description of class Velero here.
- *
- * @author (your name)
+ * 
+ * @author (Cristian) 
  * @version (a version number or a date)
  */
 public class Velero extends Barco
 {
-    // instance variables - replace the example below with your own
-    
+  
+    private int numMastiles;
 
     /**
      * Constructor for objects of class Velero
      */
-    public Velero()
+    public Velero(String matricula, double eslora, int anioFabricacion, Persona propietario, int numeroMastiles)
     {
-        // initialise instance variables
-
+        super(matricula, eslora, anioFabricacion, propietario);
+        numMastiles = numeroMastiles;
     }
+    
+    @Override
+    /**
+     * Metodo que devuelve el coeficiente de Bernua de un Velero
+     */
+    
+     public int getCoeficienteBernua()
+     {
+         
+         return numMastiles; 
+         
+     }
+     
+       @Override 
+     /**
+      * Metodo toString
+      */
+     public String toString()
+     {
+         String datosBarco = "";
+         datosBarco += super.toString();
+         datosBarco += "Tiene" + " " + numMastiles + " " +  "mastiles" + "\n";
+         
+         return datosBarco;
+            
+        }
+
+   
 }

@@ -1,21 +1,38 @@
 
 /**
  * Write a description of class Persona here.
- *
- * @author (your name)
+ * 
+ * @author (Cristian) 
  * @version (a version number or a date)
  */
 public class Persona
 {
-    // instance variables - replace the example below with your own
-    
+   
+    private String nombre;
+    private String dni;
 
     /**
      * Constructor for objects of class Persona
      */
-    public Persona()
+    public Persona(String nombre, String dni)
     {
-        // initialise instance variables
-
+      this.nombre = nombre;
+      this.dni = dni;
     }
+    
+    /**
+     * Metodo toString
+     */
+    public String toString()
+    {
+        String datosPersona = "";
+        datosPersona += "Nombre : " + " " + nombre + "\n";
+        datosPersona += "DNI : " + " " + dni + "\n";
+        
+        return datosPersona;
+        
+    }
+    
+
+  
 }

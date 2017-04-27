@@ -1,8 +1,8 @@
 
 /**
  * Write a description of class Puerto here.
- * 
- * @author (your name) 
+ *
+ * @author (your name)
  * @version (a version number or a date)
  */
 public class Puerto
@@ -18,9 +18,9 @@ public class Puerto
         amarres = new Alquiler[4];
     }
 
-    public double alquilarAmarre(int numDias, Barco barco){
+    public float alquilarAmarre(int numDias, Barco barco){
         int primerLibre = this.posicionPrimerAmarreLibre();
-        double precioAlquiler = -1;
+        float precioAlquiler = -1;
         Alquiler nuevoAlquiler = new Alquiler(numDias, barco, primerLibre);
         if (primerLibre != -1) {
             amarres[primerLibre] = nuevoAlquiler;

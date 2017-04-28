@@ -14,7 +14,11 @@ public abstract class Barco
 
     /**
      * Constructor for objects of class Barco
-     */
+     * @param matricula String para meter la matricula del barco
+     * @param eslora double introduce el tamaño de la eslora en metros
+     * @param anioFabricacion int para el año de fabricacion del barco
+     * @param propietario Persona para el propietario del barco
+     */ 
     public Barco(String matricula, double eslora, int anioFabricacion,  Persona propietario)
     {
         this.propietario = propietario;
@@ -30,6 +34,7 @@ public abstract class Barco
     
     /**
      * Metodo toString 
+     * @return datosBarco - String para devolver la informacion del barco
      */
     public String toString()
     {
@@ -45,6 +50,7 @@ public abstract class Barco
     
     /**
      * Metodo que devuelve la eslora del barco
+     * @return eslora - int para devolver la eslora en metros del barco
      */
     public double getEslora()
     {

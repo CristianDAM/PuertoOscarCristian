@@ -12,6 +12,7 @@ public class Velero extends Barco
 
     /**
      * Constructor for objects of class Velero
+     * @param numeroMastiles para el numero de mastiles de un velero
      */
     public Velero(String matricula, double eslora, int anioFabricacion, Persona propietario, int numeroMastiles)
     {
@@ -22,6 +23,7 @@ public class Velero extends Barco
     @Override
     /**
      * Metodo que devuelve el coeficiente de Bernua de un Velero
+     *  @return potencia - int sobreescribe el metodo getCoeficienteBernua de la clase padre y devuelve la el coeficiente de bernua que en este caso es el numero de mastiles 
      */
     
      public int getCoeficienteBernua()
@@ -34,6 +36,7 @@ public class Velero extends Barco
        @Override 
      /**
       * Metodo toString
+      *  @return datosBarco - Sring para devolver los datos del Velero junto con los datos de la clase padre Barco porque sobreescribe el metodo
       */
      public String toString()
      {

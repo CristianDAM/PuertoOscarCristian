@@ -12,6 +12,7 @@ public class EmbarcacionAMotor extends Barco
 
     /**
      * Constructor for objects of class EmbarcacionAMotor
+     * @param potencia int para la potencia de las embarcaciones a motor 
      */
     public EmbarcacionAMotor(String matricula, double eslora, int anioFabricacion, Persona propietario, int potencia)
     {
@@ -22,6 +23,7 @@ public class EmbarcacionAMotor extends Barco
     @Override
     /**
      * Metodo que devulve el coeficiente de Bernua de una EmbarcacionAMotor
+     * @return potencia - int sobreescribe el metodo getCoeficienteBernua de la clase padre y devuelve la el coeficiente de bernua que en este caso es la potencia 
      */
     public int getCoeficienteBernua()
     {
@@ -34,6 +36,7 @@ public class EmbarcacionAMotor extends Barco
     @Override
     /**
      * Metodo toString
+     * @return datosBarco - Sring para devolver los datos de la embarcacionAMotor junto con los datos de la clase padre Barco porque sobreescribe el metodo
      */
     public String toString()
     {

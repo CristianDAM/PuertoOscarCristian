@@ -44,7 +44,7 @@ public class Alquiler
      * El precio del alquiler a pagar se calcula a partir del 
      * número de días de ocupación multiplicado por un valor en función del barco 
      * (esta valor es el resultante de multiplicar por 10 los metros de eslora). Al 
-     * resultado se le suma la cantidad obtenida de multiplicar un valor ﬁjo 
+     * resultado se le suma la cantidad obtenida de multiplicar un valor fijo 
      * (300 euros) por el coeficiente de Bernua del barco.
      * El coeficiente de Bernua se calcula en función del tipo de barco:
      *          El número de mástiles para veleros,

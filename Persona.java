@@ -13,6 +13,8 @@ public class Persona
 
     /**
      * Constructor for objects of class Persona
+     * @param nombre String para el nombre de la persona que vamos a crear
+     * @param dni String para el dni de la persona que vamos a crear
      */
     public Persona(String nombre, String dni)
     {
@@ -22,6 +24,7 @@ public class Persona
     
     /**
      * Metodo toString
+     * @return datosPersona - String devuelve los datos de la persona 
      */
     public String toString()
     {
